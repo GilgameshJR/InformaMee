@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F11302</color>
+    <color name="colorPrimaryDark">#a80d01</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textTitles">@color/colorPrimary</color>
+
+    <color name="Danger1Color">#cbffc9</color>
+    <color name="Danger2Color">#fbffba</color>
+    <color name="Danger3Color">#ffd4b1</color>
+    <color name="Danger4Color">#ffb1b1</color>
+
+</resources>

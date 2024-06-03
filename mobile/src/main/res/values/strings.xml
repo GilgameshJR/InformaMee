@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">informamee</string>
+    <string name="title_activity_alert_page">AlertPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string-array name="eventType">
+        <item></item>
+        <item>Evento metereologico</item>
+        <item>Evento sismico</item>
+        <item>Evento terroristico</item>
+    </string-array>
+    <string name="Danger1">Verde</string>
+    <string name="Danger2">Giallo</string>
+    <string name="Danger3">Arancione</string>
+    <string name="Danger4">Rosso</string>
+    <string name="DangerUndefined">Sconosciuto</string>
+    <string-array name="danger">
+        <item>Qualsiasi</item>
+        <item>@string/Danger1</item>
+        <item>@string/Danger2</item>
+        <item>@string/Danger3</item>
+        <item>@string/Danger4</item>
+    </string-array>
+    <string name="servername">78.4.103.218</string>
+    <string name="Loading">CARICAMENTO IN CORSO...</string>
+    <string name="Error">ERRORE</string>
+    <string name="NoResults">NESSUN RISULTATO</string>
+    <string name="SearchResult">Risultati ricerca</string>
+    <string name="UpperBarTitle">InformaMee</string>
+    <string name="WeatherType1">Alluvione</string>
+    <string name="WeatherType2">Temporali e fulmini</string>
+    <string name="WeatherType3">Frana</string>
+    <string name="WeatherType4">Pioggia e grandine</string>
+    <string name="WeatherType5">Neve e gelo</string>
+    <string name="WeatherType6">Valanga</string>
+    <string name="WeatherType7">Nebbia</string>
+    <string name="WeatherType8">Venti e mareggiate</string>
+    <string name="WeatherType9">Ciclone</string>
+    <string name="WeatherTypeGeneric">Meteo</string>
+    <string name="EventSearchTitle">Ricerca eventi</string>
+    <string name="WindSpeed">Velocità vento</string>
+    <string name="EndTime">Ora fine</string>
+    <string name="BeginTime">Ora inizio</string>
+    <string name="Description">Descrizione</string>
+    <string name="Danger">Pericolo</string>
+    <string name="Epicentre">Epicentro</string>
+    <string name="Richter">Richter</string>
+    <string name="Mercalli">Mercalli</string>
+    <string name="SeismicRowTitle">Scosse sismiche</string>
+    <string name="TerroristRowTitle">Terrorismo</string>
+    <string name="MenuTitle">Menu</string>
+    <string name="CurrAlertsUpdateButton">Aggiorna</string>
+    <string name="EventType">Tipo di evento</string>
+    <string name="CAP">CAP</string>
+    <string name="Hour">Ora</string>
+    <string name="Date">Data</string>
+    <string name="HomePlaceQuestion">DOVE ABITI?</string>
+    <string name="InsertCap">Inserisci il tuo CAP</string>
+    <string name="Confirm">CONFERMA</string>
+    <string name="Search">CERCA</string>
+    <string name="Terrorist">Terroristico</string>
+    <string name="Seismic">Sismico</string>
+    <string name="Weather">Atmosferico</string>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewSelectDate"
+                android:layout_height="wrap_content"
+                android:text="@string/Date"
+                android:layout_column="0"
+                android:gravity="left"
+                android:textColor="@color/textTitles"></TextView>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="@string/Date"
+            android:inputType="none"
+            android:importantForAutofill="no"
+            android:editable="false"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewSelectHour"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="top|left"
+                android:text="@string/Hour"
+                android:textColor="@color/textTitles"></TextView>
+
+        <EditText
+            android:id="@+id/editTextHour"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="@string/Hour"
+            android:inputType="none"
+            android:importantForAutofill="no"
+            android:editable="false"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+            <Switch
+                android:id="@+id/switchCAP"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="left|center_vertical"
+                android:text="@string/CAP"
+                android:textColor="@color/textTitles"
+                android:visibility="visible"></Switch>
+
+            <EditText
+                android:id="@+id/editTextSearchCap"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="@string/CAP"
+                android:visibility="invisible"
+                android:importantForAutofill="no"
+                android:inputType="textNoSuggestions"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="left"
+                android:text="@string/EventType"
+                android:textColor="@color/textTitles"
+                android:textIsSelectable="false"></TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/AtmosfericoCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top|left"
+                    android:gravity="center"
+                    android:text="@string/Weather"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/SismicoCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AtmosfericoCheckBox"
+                    android:layout_alignLeft="@id/AtmosfericoCheckBox"
+                    android:gravity="center"
+                    android:text="@string/Seismic"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/TerroristoCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SismicoCheckBox"
+                    android:layout_alignLeft="@id/AtmosfericoCheckBox"
+                    android:gravity="center"
+                    android:text="@string/Terrorist"></CheckBox>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="left"
+                android:text="@string/Danger"
+                android:textColor="@color/textTitles"
+                android:textIsSelectable="false"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinnerDanger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/danger"
+                    android:gravity="center"
+                    android:hint="@string/Danger"
+                    android:inputType="textPersonName"
+                    android:visibility="visible"></Spinner>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+                <Button
+                    android:layout_span="2"
+                    android:id="@+id/buttonSearch"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#F11302"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/Search"
+                android:textColor="#FFFFFF"></Button>
+        </TableRow>
+    </TableLayout>

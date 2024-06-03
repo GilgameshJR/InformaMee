@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageTerrorism"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/TerroristRowTitle"
+            android:src="@mipmap/ic_terrorism" />
+
+        <TextView
+            android:id="@+id/textViewTerrorism"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="@string/TerroristRowTitle"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTerroriticDangerLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/Danger"
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/textViewTerroriticDanger"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/textViewDescTerrorismLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/Description"
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:id="@+id/textViewDescTerrorism"
+            />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTerroristBegLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/BeginTime"
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:id="@+id/textViewTerroristBeg"
+            android:layout_marginLeft="8dp"
+            />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTerroristEndLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/EndTime"
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:id="@+id/textViewTerroristEnd"
+            />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

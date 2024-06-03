@@ -1,0 +1,9 @@
+rootProject.name='informamee'
+include ':mobile'
+include ':sys'
+include ':common'
+include ':forecast'
+include 'sys'
+include 'forecast'
+include 'common'
+

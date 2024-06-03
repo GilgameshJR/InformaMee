@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageEarthquake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/SeismicRowTitle"
+            android:src="@mipmap/ic_earthquake" />
+
+        <TextView
+            android:id="@+id/textViewSeismic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="@string/SeismicRowTitle"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+</LinearLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/textViewSeismicDangerLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/Danger"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textViewSeismicDanger"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewDescSeismicLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/Description"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_column="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textViewDescSeismic"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewSeismicBegLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/BeginTime"
+
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_column="1"
+        android:textSize="15sp"
+        android:id="@+id/textViewSeismicBeg"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewSeismicEndLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/EndTime"
+
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary"
+        android:layout_column="1"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:id="@+id/textViewSeismicEnd"
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewEpicLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/Epicentre"
+
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary"
+        android:layout_column="1"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:id="@+id/textViewEpic"
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewRichterLbl"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/Richter"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+
+            />
+    <TextView
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary"
+        android:layout_column="1"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:id="@+id/textViewRichter"
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewMercalliLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/Mercalli"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp" />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:layout_marginLeft="8dp"
+            android:layout_column="1"
+            android:textSize="15sp"
+            android:id="@+id/textViewMercalli"
+            />
+    </TableRow>
+</TableLayout>
+</LinearLayout>
